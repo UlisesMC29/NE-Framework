@@ -61,45 +61,34 @@ def editar_impresora(inventario):
             nuevo_contador = input("Contador: ")
             nuevo_fecha = input("Fecha de instalación: ")
 
-            if not nuevo_modelo:
-                impresora["modelo"] = impresora["modelo"]
-            else:
+            if nuevo_modelo:
                 impresora["modelo"] = nuevo_modelo
-            
-            if not nuevo_serie:
-                impresora["serie"] = impresora["serie"]
-            else:
+
+            if nuevo_serie:
                 impresora["serie"] = nuevo_serie
             
-            if not nuevo_ip:
-                impresora["ip"] = impresora["ip"]
-            else:
+            if nuevo_ip:
                 impresora["ip"] = nuevo_ip
             
-            if not nuevo_area:
-                impresora["area"] = impresora["area"]
-            else:
+            if nuevo_area:
                 impresora["area"] = nuevo_area
             
-            if not nuevo_contador:
-                impresora["contador"] = impresora["contador"]
-            else:
+            if nuevo_contador:
                 impresora["contador"] = nuevo_contador
 
-            if not nuevo_estado:
-                impresora["estado"] = impresora["estado"]
-            else:
+            if nuevo_estado:
                 impresora["estado"] = nuevo_estado
             
-            if not nuevo_fecha:
-                impresora["fecha_instalacion"] = impresora["fecha_instalacion"]
-            else:
+            if nuevo_fecha:
                 impresora["fecha_instalacion"] = nuevo_fecha
-            print("\nImpresora editada")    
-        else:
-            print("ID no econtrado")
+              
+            print("\nImpresora editada")
+            input("\nPresiona enter para regresar al menu")
+            return
 
-    input("\nPresiona enter para regresar al menu")
+        print("ID no econtrado")
+        input("\nPresiona enter para regresar al menu")
+
 
 def eliminar_impresora(inventario):
     print("\n ----Eliminar impresora----")
