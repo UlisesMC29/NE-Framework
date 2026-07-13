@@ -85,10 +85,9 @@ def editar_impresora(inventario):
             print("\nImpresora editada")
             input("\nPresiona enter para regresar al menu")
             return
-
-        print("ID no econtrado")
-        input("\nPresiona enter para regresar al menu")
-
+        # else:
+    print("ID no econtrado")
+    input("\nPresiona enter para regresar al menu")
 
 def eliminar_impresora(inventario):
     print("\n ----Eliminar impresora----")
@@ -102,4 +101,24 @@ def eliminar_impresora(inventario):
             return
     print("\n ¡¡ ID no identificado !!")
     input("\nPresiona enter para regresar al menu")
+
+def buscar_impresora(inventario):
+    print("\n ---- Buscar Impresora ----")
+    id_busqueda = input("Ingresa el ID de la impresora: ")
+    for impresora in inventario:
+        if impresora["id"] == id_busqueda:
+            print("\n --- Impresora encontrada ---")
+            print("id:", impresora["id"])
+            print("Modelo:", impresora["modelo"])
+            print("Serie:", impresora["serie"])
+            print("IP asignada:", impresora["ip"])
+            print("Área de ubicación:", impresora["area"])
+            print("Estado actual:", impresora["estado"])
+            print("Contador actual:", impresora["contador"])
+            print("Fecha de instalación:", impresora["fecha_instalacion"])
+            input("\nPresiona enter para regresar al menu")
+            return
+        else:
+            print("\nID no encontrado")
+            input("\nPresiona enter para regresar al menu")
 
