@@ -6,6 +6,9 @@ from inventario import editar_impresora
 from inventario import eliminar_impresora
 from inventario import buscar_impresora
 from datos import inventario
+from datos import cargar_inventario
+
+inventario = cargar_inventario()
 
 while True:
     iniciar_menu()
