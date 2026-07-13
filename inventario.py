@@ -118,7 +118,6 @@ def buscar_impresora(inventario):
             print("Fecha de instalación:", impresora["fecha_instalacion"])
             input("\nPresiona enter para regresar al menu")
             return
-        else:
-            print("\nID no encontrado")
-            input("\nPresiona enter para regresar al menu")
+    print("\nID no encontrado")
+    input("\nPresiona enter para regresar al menu")
 
