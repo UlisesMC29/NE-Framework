@@ -1,3 +1,4 @@
+from datos import guardar_inventario
 
 def registrar_impresora(inventario):
     print("\n ---- Registrar impresora ----")
@@ -23,6 +24,10 @@ def registrar_impresora(inventario):
     }
 
     inventario.append(impresora)
+
+    guardar_inventario(inventario)
+
+
 
     print("\nImpresora registrada")
 

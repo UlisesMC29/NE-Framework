@@ -1,0 +1,12 @@
+[
+    {
+        "id": "1",
+        "modelo": "Ecosys M3655idn",
+        "serie": "R4P1581071",
+        "ip": "10.123.3.28",
+        "area": "UIL A",
+        "estado": "Ok",
+        "contador": "1345987",
+        "fecha_instalacion": "14/07/2026"
+    }
+]

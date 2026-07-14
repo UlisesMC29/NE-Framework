@@ -5,10 +5,11 @@ from inventario import mostrar_inventario
 from inventario import editar_impresora
 from inventario import eliminar_impresora
 from inventario import buscar_impresora
+# from inventario import guardar_inventario
 from datos import inventario
-from datos import cargar_inventario
+# from datos import guardar_impresora
 
-inventario = cargar_inventario()
+# inventario = cargar_inventario()
 
 while True:
     iniciar_menu()
@@ -24,6 +25,7 @@ while True:
     elif opcion == "5":
         buscar_impresora(inventario)
     elif opcion == "6":
+        # guardar_inventario(inventario)
         print("\n Hasta Luego")
         print("\n ")
         break
